@@ -93,8 +93,7 @@ public void draw() {
    start = true; 
    countTime = 0;
   }else{
-     countTime += millis()/1000; 
-     println(countTime);
+     countTime += millis()/1000;
   }
   
   if(countTime >= 23000){
@@ -455,10 +454,10 @@ void keyPressed() {
 
 void ball() {
 
-  //fill(random((1+cos(float(millis())/4000))*234));
+  fill(random((1+cos(float(millis())/4000))*234));
   //filter(18);
-  //ellipse(abs(x+9*cos(A+=.5-noise(i++)))%800, abs(y+9*sin(A))%800, 40, 40);
-  //filter(11);
+  ellipse(abs(x+9*cos(A+=.5-noise(i++)))%800, abs(y+9*sin(A))%800, 40, 40);
+  filter(11);
 }
 
 void drawline() {
